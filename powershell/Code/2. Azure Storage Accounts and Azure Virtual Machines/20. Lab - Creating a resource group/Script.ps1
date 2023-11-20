@@ -22,6 +22,6 @@ Connect-AzAccount
 # Here we are creating a resource group
 
 $ResourceGroupName ="powershell-grp"
-$Location = "North Europe"
-
-New-AzResourceGroup -Name $ResourceGroupName -Location $Location
+$Location = "East US"
+$Subscription = "Pay-As-You-Go"
+New-AzResourceGroup -Name $ResourceGroupName -Location $Location -Subscription $Subscription
